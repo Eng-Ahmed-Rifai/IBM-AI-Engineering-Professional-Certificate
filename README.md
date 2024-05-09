@@ -1,6 +1,6 @@
 # IBM AI Engineering Professional Certificate
 
-Welcome to my repository for the IBM AI Engineering Professional Certificate! Here, I'll be storing my practice labs, projects, and notes related to the course.
+Welcome to my repository for the IBM AI Engineering Professional Certificate! Here, I'll be storing my practice labs, projects, and notes related to the courses.
 
 ## About the Certificate
 
