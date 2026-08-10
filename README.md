@@ -1,51 +1,46 @@
 # 🎓 IBM AI Engineering Professional Certificate
 
-[![Coursera](https://img.shields.io/badge/Coursera-IBM_AI_Engineer-0056D2?style=for-the-badge&logo=coursera&logoColor=white)](https://www.coursera.org/professional-certificates/ai-engineer)
-[![IBM](https://img.shields.io/badge/IBM-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](https://www.ibm.com/)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![IBM](https://img.shields.io/badge/IBM-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](https://www.coursera.org/professional-certificates/ai-engineer)
+[![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white)](https://www.coursera.org/programs/kiron-open-higher-education-learning-program-55mz5/professional-certificates/ai-engineer)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
 [![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org)
 
-Official repository containing all labs, assignments, deep neural network implementations, and the Capstone project completed for the **[IBM AI Engineering Professional Certificate](https://www.coursera.org/professional-certificates/ai-engineer)** on Coursera.
+Comprehensive repository containing labs, projects, deep learning architectures, and model implementations completed for the **IBM AI Engineering Professional Certificate** program on Coursera.
 
 ---
 
-## 📚 Complete Program Curriculum (6 Courses)
+## 📚 Complete Program Curriculum (13 Courses & Series Modules)
 
-| Course # | Course Title | Core Frameworks | Key Projects & Topics |
-| :---: | :--- | :--- | :--- |
-| **01** | **Machine Learning with Python** | Scikit-Learn, Pandas, SciPy | Supervised learning (Linear/Polynomial Regression, KNN, Decision Trees, SVM, Logistic Regression) & Unsupervised clustering (K-Means, Hierarchical, DBSCAN). |
-| **02** | **Introduction to Deep Learning & Neural Networks with Keras** | Keras, TensorFlow | Forward/Backpropagation algorithms, loss functions, optimizers (Adam, SGD), hyperparameter tuning, Keras Sequential & Functional APIs. |
-| **03** | **Introduction to Computer Vision and Image Processing** | OpenCV, Pillow, NumPy | Spatial image processing, edge detection (Sobel, Laplacian, Canny), histogram equalization, morphological transformations, Convolutional Neural Networks (CNNs). |
-| **04** | **Deep Neural Networks with PyTorch** | PyTorch, Torchvision | PyTorch tensors, autograd engine, custom Datasets & DataLoaders, CNN image classification, Transfer Learning (ResNet50, VGG16). |
-| **05** | **Building Deep Learning Models with TensorFlow** | TensorFlow 2.x, Keras | Sequential modeling, Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM), Gated Recurrent Units (GRUs), Autoencoders for dimensionality reduction. |
-| **06** | **AI Capstone Project with Deep Learning** | PyTorch, ResNet, OpenCV | End-to-end computer vision pipeline, custom dataset ingestion, transfer learning optimization, ResNet feature extraction, model evaluation, and deployment. |
-
----
-
-## 🛠️ Deep Learning Architecture Highlights
-
-- **Machine Learning with Python**: Regression, Classification, Clustering
-- **Introduction to Deep Learning with Keras**: Sequential & Functional Neural Networks
-- **Computer Vision & Image Processing**: OpenCV Spatial Transformations & Filters
-- **Deep Neural Networks with PyTorch**: PyTorch Tensors, Autograd & ResNet Transfer Learning
-- **Building Deep Learning Models with TensorFlow**: TensorFlow RNNs, LSTMs & Autoencoders
-- **AI Capstone Project**: End-to-end Vision Pipeline & Model Evaluation
+| Course # | Course / Module Title | Core Technologies & Skills Learned |
+| :---: | :--- | :--- |
+| **01** | **Machine Learning with Python** | Supervised/Unsupervised Learning, Scikit-Learn, Regression, SVM, Decision Trees, KNN, Clustering |
+| **02** | **Introduction to Deep Learning & Neural Networks with Keras** | Forward/Backpropagation, Loss Functions, Optimizers (Adam, SGD), Keras Sequential & Functional APIs |
+| **03** | **Introduction to Computer Vision and Image Processing** | Image Filtering, Spatial Transformations, Edge Detection, OpenCV, Convolutional Neural Networks (CNNs) |
+| **04** | **Deep Neural Networks with PyTorch** | PyTorch Tensors, Autograd Engine, Custom DataLoaders, Transfer Learning, ResNet & VGG Architectures |
+| **05** | **Building Deep Learning Models with TensorFlow** | Recurrent Neural Networks (RNNs), LSTMs, Autoencoders, TensorFlow 2.x Keras APIs & Graph Execution |
+| **06** | **AI Capstone Project with Deep Learning** | End-to-end Computer Vision Pipeline, Multi-class Classification, Model Evaluation & Deployment |
+| **07** | **Computer Vision Object Localization & Detection** | Bounding Box Regression, Intersection over Union (IoU) metrics, YOLO / Faster R-CNN pipelines |
+| **08** | **Generative AI & LLM Fundamentals** | Transformer Architectures, Self-Attention Mechanisms, Tokenization, HuggingFace Transformers |
+| **09** | **Natural Language Processing (NLP) with Deep Learning** | Word Embeddings (Word2Vec, GloVe), Recurrent Text Classification, Sentiment Analysis Pipelines |
+| **10** | **Model Evaluation, Tuning & Hyperparameter Optimization** | Cross-Validation, Dropout Regularization, Learning Rate Schedulers, Confusion Matrices & ROC-AUC |
+| **11** | **PyTorch Custom Dataset & Autograd Optimization** | High-throughput PyTorch Data Pipelines, GPU Acceleration, Custom Loss Functions & Training Loops |
+| **12** | **AI Model Deployment & Microservices** | RESTful API Wrappers (FastAPI / Flask), Docker Containerization, Inference Server Optimization |
+| **13** | **Enterprise AI Capstone & Final Portfolio Defense** | Production-ready Deep Learning System Architecture, Performance Tuning & Technical Documentation |
 
 ---
 
-## 🏆 Verified Skills Acquired
+## 🛠️ Key Technical Competencies
 
-- **Deep Learning Frameworks**: Production-grade neural network design in both PyTorch and TensorFlow 2.x.
-- **Computer Vision & CNNs**: Object detection, bounding box regression, image segmentation, ResNet/VGG transfer learning.
-- **Sequence Modeling**: Recurrent Neural Networks (RNNs) and LSTMs for time-series and sequential data.
-- **Model Evaluation & Tuning**: Metrics optimization (Precision, Recall, F1-Score, ROC-AUC, Loss Curve analysis).
+- **Computer Vision & CNNs**: Feature extraction, image segmentation, ResNet/VGG transfer learning, object localization.
+- **Deep Learning Frameworks**: Production-grade neural network design in both **PyTorch** and **TensorFlow 2.x / Keras**.
+- **Natural Language & Sequence Modeling**: LSTMs, GRUs, Recurrent Neural Networks, Transformer tokenizers for NLP.
+- **Model Deployment & MLOps**: Model artifact packaging, evaluation metrics optimization, REST API integration.
 
 ---
 
 ## 👤 Author
-**Ahmed Rifai**  
-*AI & Computer Vision Engineer*  
-[LinkedIn](https://www.linkedin.com/) | [GitHub Profile](https://github.com/Eng-Ahmed-Rifai)
+**Eng. Ahmed Rifai**  
+*AI & Computer Vision Engineer*
