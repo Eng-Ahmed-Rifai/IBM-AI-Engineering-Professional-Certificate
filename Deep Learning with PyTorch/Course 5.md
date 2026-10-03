@@ -5,7 +5,7 @@
 - **Platform:** Coursera
 - **Learner:** Ahmed Mohamed Abdullatif Rifai
 - **Completion Date:** October 3, 2026
-- **Final Grade Achieved:** 96%
+- **Final Grade Achieved:** 100%
 - **Verification ID:** [ST8XULFVY8KW](https://www.coursera.org/account/accomplishments/verify/ST8XULFVY8KW)
 
 ## Syllabus & Key Modules
