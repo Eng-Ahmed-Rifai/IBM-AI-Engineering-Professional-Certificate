@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QA Bot - Gradio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      min-height: 100vh;
+    }
+    .gradio-container {
+      width: 100%;
+      max-width: 1050px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      padding: 32px 28px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+    .header p {
+      font-size: 15px;
+      color: #4b5563;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .app-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .block {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .block-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .file-preview {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      background: #f9fafb;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .file-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .file-icon {
+      width: 34px;
+      height: 42px;
+      background: #fee2e2;
+      border: 1px solid #fecaca;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #dc2626;
+      font-weight: 700;
+      font-size: 11px;
+    }
+    .file-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .file-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1f2937;
+    }
+    .file-size {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .file-actions {
+      color: #9ca3af;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .text-input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 14px;
+      color: #111827;
+      background: #ffffff;
+      resize: vertical;
+      min-height: 60px;
+      outline: none;
+      font-family: inherit;
+    }
+    .text-input:focus {
+      border-color: #ff7c00;
+      box-shadow: 0 0 0 2px rgba(255, 124, 0, 0.15);
+    }
+    .btn-row {
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      flex: 1;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.15s ease-in-out;
+      border: none;
+    }
+    .btn-clear {
+      background: #f3f4f6;
+      color: #374151;
+      border: 1px solid #e5e7eb;
+    }
+    .btn-clear:hover {
+      background: #e5e7eb;
+    }
+    .btn-submit {
+      background: linear-gradient(90deg, #ff7c00 0%, #ff6000 100%);
+      color: #ffffff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    .btn-submit:hover {
+      background: linear-gradient(90deg, #f57300 0%, #eb5500 100%);
+    }
+    .output-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      background: #f9fafb;
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #111827;
+      min-height: 236px;
+      white-space: pre-line;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 18px;
+      border-top: 1px solid #f3f4f6;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+    .built-with {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .gradio-logo {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: #ff7c00;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gradio-container">
+    <div class="header">
+      <h1>QA Bot</h1>
+      <p>Upload a PDF document and ask any question. The chatbot will try to answer using the provided document.</p>
+    </div>
+
+    <div class="app-grid">
+      <!-- Input Column -->
+      <div class="column">
+        <div class="block">
+          <div class="block-label">
+            <span>Upload PDF File</span>
+            <span style="font-weight: 400; text-transform: none; color: #9ca3af;">single file</span>
+          </div>
+          <div class="file-preview">
+            <div class="file-info">
+              <div class="file-icon">PDF</div>
+              <div class="file-details">
+                <span class="file-name">Generative_AI_and_RAG_Architecture.pdf</span>
+                <span class="file-size">342.8 KB</span>
+              </div>
+            </div>
+            <div class="file-actions">✕</div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="block-label">Input Query</div>
+          <textarea class="text-input" readonly>What are the key benefits of combining LangChain with Watsonx for RAG?</textarea>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-clear">Clear</button>
+          <button class="btn btn-submit">Submit</button>
+        </div>
+      </div>
+
+      <!-- Output Column -->
+      <div class="column">
+        <div class="block" style="height: 100%;">
+          <div class="block-label">Output Answer</div>
+          <div class="output-box">Based on the uploaded document, combining LangChain with Watsonx provides several key benefits:
+
+1. Context-Grounding & Accuracy: By integrating PyPDFLoader and Chroma vector database, user questions are augmented with exact semantic text chunks, preventing hallucinated responses.
+
+2. Modular Architecture: The RAG pipeline decouples document processing (RecursiveCharacterTextSplitter), embedding generation (WatsonxEmbeddings with ibm/slate-125m), and inference (WatsonxLLM) into maintainable, scalable layers.
+
+3. Enterprise-Ready LLM Integration: Seamlessly connects Watsonx foundational models to RetrievalQA chains, providing low-latency, highly reliable question answering over domain-specific corpora.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="built-with">
+        <span class="gradio-logo"></span>
+        <span>Built with <strong>Gradio</strong></span>
+      </div>
+      <div>
+        <span>Use via API</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
